@@ -1,0 +1,31 @@
+<head>
+    <meta charset="utf-8">
+    <title>Panier</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+  </head>
+  
+
+<h1>IT Academy</h1>
+<h2>Panier</h2>
+<a href="/" style="text-decoration: none;"> <input type="submit" name="Inscription" value="Finaliser l'inscription" id = "button"> </a>
+<a href="/" style="text-decoration: none;"> <input type="submit" name="Catalogue" value="Retour au catalogue" id = "button"/> </a>
+
+<table>
+    <tr>
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Prix</th>
+      <th>Début</th>
+      <th>Fin</th>
+    </tr>
+    <% for(formationtable of panier) { %>
+      <tr>
+        <th><%= formationtable.idforma %></th>
+        <th><%= formationtable.NomForma %></th>
+        <th><%= formationtable.Prix %>€</th>
+        <th><%= formationtable.Debut %></th>
+        <th><%= formationtable.Fin %> </th>
+        <th><a href="/annule/<%= formationtable.idforma %>"><input type="submit" name="delete" value="Supprimer" id = "button"/></a></th>
+      </tr>
+    <% } %>
+  </table>

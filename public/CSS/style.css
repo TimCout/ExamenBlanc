@@ -1,0 +1,19 @@
+
+h1{
+    text-align: center;
+    color: navy;
+}
+
+h2{
+    color : navy;
+}
+
+td, th {
+    border: 1px solid black; /* Bordure de 1 pixel solide noire */
+    padding: 8px; /* Espace intérieur autour du contenu */
+  }
+
+#button{
+    background-color: lightgrey;
+    color : green;
+}
